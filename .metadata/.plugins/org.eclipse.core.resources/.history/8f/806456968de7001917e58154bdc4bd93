@@ -1,0 +1,16 @@
+package tipRecommend;
+
+import java.util.Scanner;
+
+public class TipRecommend {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input the tab: ");
+		double tab = input.nextDouble();
+		System.out.print("How was the service? (Poor, Good, Great) ");
+		String service = input.nextLine();
+		
+		
+	}
+}

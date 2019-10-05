@@ -1,0 +1,23 @@
+package kioskChange;
+
+import java.util.Scanner;
+
+public class KioskChange {
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input total: ");
+		double total = input.nextDouble();
+		System.out.print("Input amount given: ");
+		double given = input.nextDouble();
+		
+		double change = total - given;
+		returnChange(total, change);
+		
+
+	}
+	
+	public static void returnChange(double total, double change) {
+		
+	}
+}

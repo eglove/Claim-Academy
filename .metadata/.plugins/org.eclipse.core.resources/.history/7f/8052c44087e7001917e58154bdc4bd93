@@ -1,0 +1,16 @@
+package marathonRace;
+
+public class MarathonRace {
+	public static void main(String[] args) {
+		
+		int time = 7724;
+		double miles = 26.2;
+		
+		int hours = time / 3600;
+		time = time - (hours * 3600);
+		int mins = time / 60;
+		time = time - (mins * 60);
+		
+		System.out.println(hours + "hrs:" + mins + "mins:" + time +"secs");
+	}
+}

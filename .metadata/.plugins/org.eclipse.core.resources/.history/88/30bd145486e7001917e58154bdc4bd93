@@ -1,0 +1,26 @@
+package classroomRatio;
+import java.text.DecimalFormat;
+
+public class ClassroomRatio {
+
+	public static void main(String[] args) {
+		int boys = 11;
+		int girls = 16;
+		int teacher = 1;
+		int assistant = 1;
+		
+		DecimalFormat df = new DecimalFormat("#.##");
+		
+		// Percentage of class that is girls
+		double girlsPer = (double) girls / (double)(girls + boys);
+		// Percentage
+		girlsPer = girlsPer * 100;
+		
+		// Student teacher ratio
+		double stRatio = (double)(boys + girls) / (double)(teacher + assistant);
+		
+		System.out.println(df.format(girlsPer) + "% of the class are girls.");
+		System.out.println("The Student-Teacher ratio is " + stRatio);
+	}
+
+}

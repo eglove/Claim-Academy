@@ -1,0 +1,23 @@
+package marathonRace;
+import java.text.DecimalFormat;
+
+public class MarathonRace {
+	public static void main(String[] args) {
+		
+		DecimalFormat df = new DecimalFormat("#.###");
+		
+		int time = 7724;
+		double miles = 26.2;
+		
+		int hours = time / 3600;
+		time = time - (hours * 3600);
+		int mins = time / 60;
+		int secs = time - (mins * 60);
+		
+		System.out.println(hours + "hrs:" + mins + "mins:" + secs +"secs");
+		
+		// Pacing
+		double pace = ((hours * 60) + mins + (secs / 60)) / miles;
+		System.out.println("Average pace: " + df.format(pace) + " minutes per mile.");
+	}
+}

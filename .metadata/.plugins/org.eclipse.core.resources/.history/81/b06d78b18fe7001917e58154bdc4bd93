@@ -1,0 +1,38 @@
+package tipRecommend;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class TipRecommend {
+	public static void main(String[] args) {
+		
+		DecimalFormat df = new DecimalFormat("#.###");
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input the tab: ");
+		double tab = input.nextDouble();
+		
+		
+		System.out.print("How was the service? ");
+		input = new Scanner(System.in);
+		String service = input.nextLine();
+		System.out.println(service + " " + (service == "Great"));
+		
+		System.out.println(df.format(computeTip(tab, service)));
+		
+	}
+	
+	public static double computeTip(double tab, String service) {
+		
+		if(service == "Poor") {
+			return tab * .16;
+		} else if(service == "Good") {
+			return tab * .22;
+		} else if(service == "Great") {
+			return tab * .26;
+		} else {
+			System.out.println("Invalid quality");
+			return 0;
+		}
+	}
+}

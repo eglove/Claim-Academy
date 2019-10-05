@@ -1,0 +1,11 @@
+INDEX VERSION 1.131+C:\Users\Ethan\Documents\GitHub\Claim Academy\.metadata\.plugins\org.eclipse.jdt.core
+1798090303.index
+2226788451.index
+3257824648.index
+2298771441.index
+649996102.index
+2089669774.index
+4228135348.index
+3067610623.index
+381488786.index
+1418376386.index

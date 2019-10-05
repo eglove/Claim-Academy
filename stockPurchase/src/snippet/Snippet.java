@@ -1,0 +1,13 @@
+package snippet;
+
+public class Snippet {
+	public static void main(String[] args) {
+		int savings = 25000;
+		int stockPrice = 989;
+		
+		int shares = savings / stockPrice;
+		
+		System.out.println("Buy " + shares + " shares of stock.");
+	}
+}
+

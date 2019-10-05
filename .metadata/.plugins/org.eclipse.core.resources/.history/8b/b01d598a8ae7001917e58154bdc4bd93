@@ -1,0 +1,18 @@
+package letterGrade;
+
+import java.util.Scanner;
+
+public class LetterGrade {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input an integer: ");
+		int grade = input.nextInt();
+		
+		switch (grade) {
+			case (grade > 90) || (grade < 100):
+				System.out.println("A");
+		}
+
+	}
+}

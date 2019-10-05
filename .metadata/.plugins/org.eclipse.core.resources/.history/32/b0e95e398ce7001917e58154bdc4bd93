@@ -1,0 +1,15 @@
+package savingsCalc;
+
+public class SavingsCalc {
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	public static void savings(int pv, double rate, int time) {
+		
+		rate = rate * 100;
+		return pv * (1 + (rate * time));
+	}
+}
